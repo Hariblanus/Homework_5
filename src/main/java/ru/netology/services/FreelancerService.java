@@ -10,7 +10,7 @@ public class FreelancerService {
             System.out.print("Месяц " + month + ". Денег " + money + ". ");
             if (money >= threshold) { // Буду отдыхать
                 money -= expenses;
-                leisure = money / 3; // Расчет расходов на отдых
+                leisure = money - (money / 3); // Расчет расходов на отдых
                 money -= leisure; // Вычет расходов на отдых
                 months++;
                 System.out.println("Буду отдыхать. Потратил " + expenses + ", затем ещё " + leisure + ".");
